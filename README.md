@@ -81,5 +81,7 @@ An accuracy score is not always an appropriate or a meaningful performance metri
 
 A quick scan of the matrices shoes that all models had high precision of detecting low risk and very low precision detecting high risk credit. Looking at recourse metrics, we ask knowing that a credit applicant is high risk, how likely is it that our model will predict it that they are? It appears that our Easy Ensemble AdaBoost Classifier did the best job at that with a 91% recall score. The model was also good at predicting low risk profiles with a 94% recall score. SMOTEENN was the second in line in terms of recall score for high risk candidates at 70%. Finally it's also worth mentioning Balanced Random Forest Classifier's low risk recall score at 91%.
 
+### Recommendation
+
 While the AdaBoost Classifier performed the best amongst the group its ability to predict high risk is still very low (7%). The model is sensitive enough (94% and 91% recall scores) but not precise enough. And this is made more apparent by the low f1 score of 14%. Even our best model didn't perform well enough, so we couldn't really recommend it. Our recomendation would be to test more data. 
 
